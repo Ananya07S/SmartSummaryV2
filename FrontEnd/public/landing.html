@@ -1,0 +1,242 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartSummary Extension - Visual Guide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #1A1A1A;
+            --secondary-color: #1A1A1A;
+            --text-dark: #1A1A1A;
+            --text-light: #4B5563;
+            
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            
+            color: var(--text-dark);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 50px rgba(74, 108, 247, 0.1);
+            max-width: 1400px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+            padding: 40px;
+            overflow: hidden;
+        }
+
+        .header {
+            grid-column: 1 / -1;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.75rem;
+            color: var(--primary-color);
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: var(--text-light);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .upload-section {
+            grid-column: 1 / -1;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        .upload-btn {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 15px 60px;
+            border-radius: 10px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 25px rgba(74, 108, 247, 0.3);
+        }
+
+        .upload-btn:hover {
+            background: var(--secondary-color);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(74, 108, 247, 0.4);
+        }
+
+        .upload-btn svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .video-section {
+            grid-column: 1 / 2;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+            width: 100%;
+            aspect-ratio: 16/9;
+            min-height: 500px;
+            max-height: 700px;
+        }
+
+        .video-section video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .steps-section {
+            grid-column: 2 / 3;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-self: flex-start;
+        }
+
+        .step {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            padding: 20px;
+            background: #F9FAFB;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .step:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .step-marker {
+            width: 40px;
+            height: 40px;
+            background: var(--primary-color);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .step-content {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 1200px) {
+            .container {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .video-section {
+                grid-column: 1 / -1;
+                min-height: 400px;
+            }
+
+            .steps-section {
+                grid-column: 1 / -1;
+                margin-top: 20px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .upload-btn {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .video-section {
+                min-height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Download the SmartSummary Chrome Extension</h1>
+        </div>
+        
+        <div class="upload-section">
+            <a href="SmartSummary Chrome Extension.zip" download="SmartSummary_Chrome_Extension.zip" class="upload-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
+                </svg>
+                Download ZIP Folder
+            </a>
+        </div>
+        
+        <div class="video-section">
+            <video width="100%" height="100%" controls autoplay muted loop>
+                <source src="Untitled design.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        
+        <div class="steps-section">
+            <div class="step">
+                <div class="step-marker">1</div>
+                <div class="step-content">Click the Download button to get the extension ZIP folder containing all necessary files.</div>
+            </div>
+            <div class="step">
+                <div class="step-marker">2</div>
+                <div class="step-content">Extract the downloaded ZIP file to a convenient location on your computer.</div>
+            </div>
+            <div class="step">
+                <div class="step-marker">3</div>
+                <div class="step-content">Open Google Chrome and navigate to chrome://extensions/</div>
+            </div>
+            <div class="step">
+                <div class="step-marker">4</div>
+                <div class="step-content">Enable Developer mode by toggling the switch in the top-right corner.</div>
+            </div>
+            <div class="step">
+                <div class="step-marker">5</div>
+                <div class="step-content">Click 'Load unpacked' and select the extracted extension folder.</div>
+            </div>
+            <div class="step">
+                <div class="step-marker">6</div>
+                <div class="step-content">Verify the extension is installed and ready in your Chrome toolbar.</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

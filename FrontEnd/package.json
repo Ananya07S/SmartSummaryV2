@@ -1,0 +1,58 @@
+{
+  "name": "smartsummary",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.6",
+    "@testing-library/react": "^11.2.2",
+    "@testing-library/user-event": "^12.5.0",
+    "axios": "^0.21.0",
+    "lottie-react": "^2.4.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-google-login": "^5.1.25",
+    "react-lottie": "^1.2.3",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^5.0.1",
+    "web-vitals": "^0.2.4"
+  },
+  "scripts": {
+    "start": "npm run watch:css && react-scripts start",
+    "build": "npm run watch:css && react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "watch:css": "postcss src/styles/tailwind.css -o src/styles/output.css"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "autoprefixer": "^10.0.4",
+    "eslint": "^7.15.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "postcss": "^8.1.14",
+    "postcss-cli": "^8.3.0",
+    "tailwindcss": "^2.0.1"
+  }
+}
