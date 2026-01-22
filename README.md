@@ -10,7 +10,7 @@ The project is currently not in a working condition as the Azure credits have ex
 
 Web conferencing and online meetings have become the new work culture nowadays. But somewhere along the lines, we often keep missing the crux of the discussions in these online meetings, and here comes our solution - **SmartSummary**. It is your easy-to-use online meeting assistant that backs you up with automated meeting minutes in every conversation. It will help you save time on board meetings, team management, and customer support such so you just focus on the conversation and never miss what’s important.
 
-StandNote also fits into the current online education scenario, where most of the classes take place over online platforms like Google Meet and Zoom. We help students with quick and concise notes that help them to revise and memorize the concepts better.
+SmartSummary also fits into the current online education scenario, where most of the classes take place over online platforms like Google Meet and Zoom. We help students with quick and concise notes that help them to revise and memorize the concepts better.
 
 
 
